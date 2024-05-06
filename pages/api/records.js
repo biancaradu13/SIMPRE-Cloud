@@ -1,6 +1,7 @@
-import {sendMethodNotAllowed, sendOk,} from '@/utils/apiMethods.js';
+import {sendMethodNotAllowed, sendOk } from '@/utils/apiMethods.js';
 import {getCollection} from "@/utils/functions";
 import {ObjectId,} from 'mongodb';
+
 
 const COLLECTION_NAME = 'records';
 
@@ -32,10 +33,9 @@ const deleteRecord = async (id) => {
 }
 
 export default async function handler(req, res) {
-	const isAllowedMethod = req.method === 'GET' || req.method === 'POST'
-	 || req.method === 'PUT' || req.method === 'DELETE';
+	const isAllowedMethod = req.method === 'GET' || req.method === 'POST'|| req.method === 'PUT' || req.method === 'DELETE';
 	if(!isAllowedMethod) {
-		return sendMethodNotAllowed(res);
+		return sendMethodNotAllowed(res,'Method not allowed');
 	}
 
 	if(req.method === 'GET' && req.query.id) {
@@ -44,7 +44,7 @@ export default async function handler(req, res) {
 		return sendOk(res, record);
 	}
 	else 
-	if(req.method === 'GET') {
+	if(req.method === 'GET') {7
 		const records = await getRecords();
 		return sendOk(res, records);
 	}
@@ -62,5 +62,5 @@ export default async function handler(req, res) {
 		const id = req.query.id;
 		const result = await deleteRecord(id);
 		return sendOk(res, result);
-	}
+	} 
 }
