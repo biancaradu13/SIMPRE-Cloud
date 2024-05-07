@@ -103,7 +103,7 @@ export const deleteRecord = async (id) => {
     try {
         const response = await fetch(`/api/records?id=${id}`, {
             method: "DELETE",
-        });
+        })
 
         const data = await response.json();
 
