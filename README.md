@@ -1,40 +1,53 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+Documentație 
 
-## Getting Started
+1. Introducere 
 
-First, run the development server:
+Scopul principal al aplicației dezvoltate constă în gestionarea eficientă a unei baze de date ce conține informații detaliate despre FILME. Aceste date includ numele filmului, anul in care a apărut, scorul/rating pe IMDB, precum si durata filmului în minute și tipul acestuia (acțiune, crimă, mister etc.). Prin utilizarea MongoDB, o bază de date non-relațională, împreună cu serviciile de hosting furnizate de Vercel, aplicația facilitează manipularea rapidă și eficientă a datelor într-un mediu Cloud optimizat pentru aplicații frontend. Obiectivul principal este de a oferi o interfață ușor de utilizat, accesibilă global, cu posibilitatea de vizualizare și prelucrare a datelor. Aplicația se bazează pe două produse de tip Cloud: baza de date non-relațională MongoDB și hostarea proiectului este asigurată de Vercel.
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+2.  Descriere problemă 
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+ Misiunea centrală a aplicației este de a oferi acces rapid și în siguranță informații complexe și variate despre un număr semnificativ de filme, peste 2000, având în vedere securitatea și performanța. Deoarece vorbim de secolul viztezei și al volumului extrem de mare de date, trebuie avut în vedere o organizare eficientă care să faciliteze utilizatorilor accesul, actualizarea și analiza datelor într-un mod cât mai simplu posibil. De asemenea, s-a dorit crearea unei aplicațtii cât mai intuitive și ușor de folosit.
 
-You can start editing the page by modifying `pages/index.js`. The page auto-updates as you edit the file.
+3. Descriere API 
 
-[API routes](https://nextjs.org/docs/api-routes/introduction) can be accessed on [http://localhost:3000/api/hello](http://localhost:3000/api/hello). This endpoint can be edited in `pages/api/hello.js`.
+API-ul aplicației (http://localhost:3000/api/records) este organizat pentru a oferi acces la operațiunile CRUD (Create, Read, Update, Delete) asupra datelor stocate în baza de date MongoDB. Aplicația utilizează framework-ul Next.js și serverul implicit pentru a gestiona rutele și datele.
+ Endpoints:
+- GET /records - furnizează o listă cu toate filmele si toate detaliile din baza de date MongoDB.
+- POST /records - adaugă în bază un film nou.
+- GET /records/{id} - returnează detalii despre filmul specificat cu id-ul.
+- PUT /records/{id} - actualizează datele despre un film deja existent, identificate prin id.
+- DELETE /records/{id} - șterge filmul identificat cu id-ul.
 
-The `pages/api` directory is mapped to `/api/*`. Files in this directory are treated as [API routes](https://nextjs.org/docs/api-routes/introduction) instead of React pages.
+4. Flux de date 
 
-This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
+ Utilizatorii trimit cereri HTTP către serverul backend, care rulează pe platforma Next.js. Acest server procesează și răspunde la cereri prin intermediul bazei de date MongoDB. Aplicația este găzduită de Vercel.
 
-## Learn More
+Exemple de cereri și răspunsuri:
 
-To learn more about Next.js, take a look at the following resources:
+Cerere: GET /records 
+Răspuns:
+{"_id":"66393daab43049143f10b75d","movie_id":93,"movie_title":"Guardians of the Galaxy ","title_year":2014,"imdb_score":8.1,"duration":121,"genre":"Action"},
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+Metode HTTP folosite în interacțiunea cu API-ul:
+- GET - pentru a obține date despre filme.
+- POST - pentru a adăuga filme noi.
+- PUT - pentru a actualiza filmele existente.
+- DELETE - pentru a șterge filmele.
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
+5. Capturi ecran aplicație 
 
-## Deploy on Vercel
+![alt text](image-1.png)
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+![alt text](image-2.png)
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+6. Referințe
+
+https://vercel.com/blog/what-is-vercel
+https://www.ibm.com/topics/rest-apis
+https://www.techtarget.com/searchdatamanagement/definition/MongoDB
+
+
+Prezentarea workflow-ului aplicației printr-o înregistrare video (maxim 5 minute) salvată pe YouTube la categoria 'Nelistat' 
+
+
+

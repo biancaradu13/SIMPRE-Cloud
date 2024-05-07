@@ -25,7 +25,7 @@ const RecordForm = (props) => {
     className="block mb-2 text-sm font-medium text-blue-900 dark:text-pink">
         Movie id</label>
     <input 
-    type="_id" 
+    type="number" 
     id="_id" 
     onChange={(e) => handleChange('_id', e.target.value)}
     className="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-pink-600 dark:placeholder-pink-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500" placeholder="ex: 13" required />
@@ -37,7 +37,7 @@ const RecordForm = (props) => {
     className="block mb-2 text-sm font-medium text-blue-900 dark:text-pink">
         Movie name</label>
     <input 
-    type="movie_title" 
+    type="text" 
     id="movie_title" 
     //value={data.movie_title}
     onChange={(e) => handleChange('movie_title', e.target.value)}
@@ -50,7 +50,7 @@ const RecordForm = (props) => {
     className="block mb-2 text-sm font-medium text-blue-900 dark:text-pink">
         Movie year</label>
     <input 
-    type="title_year" 
+    type="number" 
     id="title_year" 
     //value={data.title_year}
     onChange={(e) => handleChange('title_year', e.target.value)}
@@ -63,7 +63,7 @@ const RecordForm = (props) => {
     className="block mb-2 text-sm font-medium text-blue-900 dark:text-pink">
         IMDB Score</label>
     <input 
-    type="imdb_score" 
+    type="number" 
     id="imdb_score" 
     //value={data.imdb_score}
     onChange={(e) => handleChange('imdb_score', e.target.value)}
@@ -76,7 +76,7 @@ const RecordForm = (props) => {
     className="block mb-2 text-sm font-medium text-blue-900 dark:text-pink">
         Duration</label>
     <input 
-    type="duration" 
+    type="number" 
     id="duration" 
     //value={data.duration}
     onChange={(e) => handleChange('duration', e.target.value)}
@@ -89,7 +89,7 @@ const RecordForm = (props) => {
     className="block mb-2 text-sm font-medium text-blue-900 dark:text-pink">
         Genre</label>
     <input 
-    type="genre" 
+    type="text" 
     id="genre" 
     //value={data.genre}
     onChange={(e) => handleChange('genre', e.target.value)}
