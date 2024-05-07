@@ -37,11 +37,7 @@ export const getRecordById = async (id) => {
 export const getRecord = async (id) => {
     try {
         const response = await fetch(`/api/records?id=${id}`, {
-            method: "PUT",
-            headers: {
-                "Content-Type": "application/json",
-            },
-            body: JSON.stringify(entry),
+            method: "GET",
         });
     
         const data = await response.json();

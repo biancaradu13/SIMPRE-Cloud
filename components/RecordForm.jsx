@@ -39,6 +39,7 @@ const RecordForm = (props) => {
     <input 
     type="movie_title" 
     id="movie_title" 
+    //value={data.movie_title}
     onChange={(e) => handleChange('movie_title', e.target.value)}
     className="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-pink-600 dark:placeholder-pink-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500" placeholder="ex: The Lord of The Rings" required />
   </div>
@@ -51,6 +52,7 @@ const RecordForm = (props) => {
     <input 
     type="title_year" 
     id="title_year" 
+    //value={data.title_year}
     onChange={(e) => handleChange('title_year', e.target.value)}
     className="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-pink-600 dark:placeholder-pink-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500" placeholder="ex: 2002" required />
   </div>
@@ -63,6 +65,7 @@ const RecordForm = (props) => {
     <input 
     type="imdb_score" 
     id="imdb_score" 
+    //value={data.imdb_score}
     onChange={(e) => handleChange('imdb_score', e.target.value)}
     className="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-pink-600 dark:placeholder-pink-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500" placeholder="ex: 8.8" required />
   </div>
@@ -75,6 +78,7 @@ const RecordForm = (props) => {
     <input 
     type="duration" 
     id="duration" 
+    //value={data.duration}
     onChange={(e) => handleChange('duration', e.target.value)}
     className="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-pink-600 dark:placeholder-pink-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500" placeholder="ex: 3" required />
   </div>
@@ -87,6 +91,7 @@ const RecordForm = (props) => {
     <input 
     type="genre" 
     id="genre" 
+    //value={data.genre}
     onChange={(e) => handleChange('genre', e.target.value)}
     className="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-pink-600 dark:placeholder-pink-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500" placeholder="ex: Action" required />
   </div>
@@ -99,7 +104,7 @@ const RecordForm = (props) => {
     <button type="button"
     onClick={()=> onSubmit(data)}
     className="text-white bg-gradient-to-r from-pink-400 via-pink-500 to-pink-600 hover:bg-gradient-to-br focus:ring-4 focus:outline-none focus:ring-pink-300 dark:focus:ring-pink-800 font-medium rounded-lg text-sm px-5 py-2.5 text-center me-2 mb-2">
-    Create</button>
+    {entry?._id ? "Update" : "Create"}</button>
   </div>
   </div>    
     </div>

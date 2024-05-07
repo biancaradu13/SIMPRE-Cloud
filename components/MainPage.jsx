@@ -54,6 +54,16 @@ const MainPage = () => {
 
     return(
         <div className="p-4 flex flex-wrap gap-4">
+            {}
+            <div className="flex justify-center w-full mt-4">
+    <button
+      type="button"
+      className="text-white bg-gradient-to-r from-pink-400 via-pink-500 to-pink-600 hover:bg-gradient-to-br focus:ring-4 focus:outline-none focus:ring-pink-300 dark:focus:ring-pink-800 font-medium rounded-lg text-sm px-5 py-2.5 text-center me-2 mb-2"
+      onClick={handleCreateRecord} 
+      >
+      Create Movie
+    </button>
+  </div>
         {data?.map(record => (
             <div key={record._id} className="max-w-sm p-6 bg-pink-100 border border-pink-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700">
                 <a href="#">
