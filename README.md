@@ -1,4 +1,9 @@
+Radu Bianca-Andreea, Grupa 1133, SIMPRE, Movie APP
 Documentație 
+
+Prezentarea workflow-ului aplicației printr-o înregistrare video (maxim 5 minute) salvată pe YouTube la categoria 'Nelistat' 
+
+https://youtu.be/10ltxnm4JRY
 
 1. Introducere 
 
@@ -47,10 +52,13 @@ https://www.ibm.com/topics/rest-apis
 
 https://www.techtarget.com/searchdatamanagement/definition/MongoDB
 
+https://vercel.com/docs
 
-Prezentarea workflow-ului aplicației printr-o înregistrare video (maxim 5 minute) salvată pe YouTube la categoria 'Nelistat' 
+https://restfulapi.net/
 
-https://youtu.be/10ltxnm4JRY
+https://blog.postman.com/rest-api-examples/
+
+
 
 
 
