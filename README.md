@@ -10,7 +10,7 @@ Scopul principal al aplicației dezvoltate constă în gestionarea eficientă a 
 
 3. Descriere API 
 
-API-ul aplicației (http://localhost:3000/api/records) este organizat pentru a oferi acces la operațiunile CRUD (Create, Read, Update, Delete) asupra datelor stocate în baza de date MongoDB. Aplicația utilizează framework-ul Next.js și serverul implicit pentru a gestiona rutele și datele.
+API-ul aplicației (https://simpre-cloud-m6i2-5ox0o7zik-biancas-projects-e958d059.vercel.app/api/records) este organizat pentru a oferi acces la operațiunile CRUD (Create, Read, Update, Delete) asupra datelor stocate în baza de date MongoDB. Aplicația utilizează framework-ul Next.js și serverul implicit pentru a gestiona rutele și datele.
  Endpoints:
 - GET /records - furnizează o listă cu toate filmele si toate detaliile din baza de date MongoDB.
 - POST /records - adaugă în bază un film nou.
@@ -35,19 +35,22 @@ Metode HTTP folosite în interacțiunea cu API-ul:
 - DELETE - pentru a șterge filmele.
 
 5. Capturi ecran aplicație 
+![alt text](image-3.png)
 
-![alt text](image-1.png)
-
-![alt text](image-2.png)
+![alt text](image-4.png)
 
 6. Referințe
 
 https://vercel.com/blog/what-is-vercel
+
 https://www.ibm.com/topics/rest-apis
+
 https://www.techtarget.com/searchdatamanagement/definition/MongoDB
 
 
 Prezentarea workflow-ului aplicației printr-o înregistrare video (maxim 5 minute) salvată pe YouTube la categoria 'Nelistat' 
+
+https://youtu.be/10ltxnm4JRY
 
 
 
