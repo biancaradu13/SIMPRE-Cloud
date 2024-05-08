@@ -5,6 +5,10 @@ Prezentarea workflow-ului aplicației printr-o înregistrare video (maxim 5 minu
 
 https://youtu.be/10ltxnm4JRY
 
+Link publicare
+
+https://simpre-cloud-m6i2-5ox0o7zik-biancas-projects-e958d059.vercel.app/
+
 1. Introducere 
 
 Scopul principal al aplicației dezvoltate constă în gestionarea eficientă a unei baze de date ce conține informații detaliate despre FILME. Aceste date includ numele filmului, anul in care a apărut, scorul/rating pe IMDB, precum si durata filmului în minute și tipul acestuia (acțiune, crimă, mister etc.). Prin utilizarea MongoDB, o bază de date non-relațională, împreună cu serviciile de hosting furnizate de Vercel, aplicația facilitează manipularea rapidă și eficientă a datelor într-un mediu Cloud optimizat pentru aplicații frontend. Obiectivul principal este de a oferi o interfață ușor de utilizat, accesibilă global, cu posibilitatea de vizualizare și prelucrare a datelor. Aplicația se bazează pe două produse de tip Cloud: baza de date non-relațională MongoDB și hostarea proiectului este asigurată de Vercel.
